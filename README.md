@@ -29,7 +29,7 @@ To use the URswap Token contract, clone this repository and follow the instructi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/urswap-token.git
+   git clone https://github.com/URSwapLabs/urswap-token.git
    cd urswap-token
 
 2. Install dependencies:
