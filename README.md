@@ -44,7 +44,12 @@ To use the URswap Token contract, clone this repository and follow the instructi
     ```bash
     npx hardhat run scripts/deploy.js --network <network-name>
 
-Replace <network-name> with the target network (e.g., bsc, ropsten, mainnet, polygon, etc.).
+5. Verify the token contract:
+
+    ```bash
+    npx hardhat run utils/verify.js --network <network-name>
+
+Replace <network-name> with the target network (e.g., bsc, ropsten, mainnet, polygon, etc.) and add **PRIVATE_KEY, ETHERSCAN_API_KEY** in .env.
 
 ---
 
@@ -81,12 +86,14 @@ In the spirit of decentralization and to ensure the trustless operation of the U
 
 By renouncing ownership, we have taken a definitive step to ensure that URswap remains a community-driven and immutable platform that serves its users with integrity and transparency.
 
+---
+
 ## **Testing**
 
 1. Run the tests to verify the functionality of the token contract:
 
     ```bash
-    npm install
+    npx hardhat test
 
 This will execute unit tests to ensure all token functions (e.g., transfer, approve, balance) are working as expected.
 
